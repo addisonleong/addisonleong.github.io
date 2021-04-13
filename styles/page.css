@@ -1,0 +1,94 @@
+@keyframes page-transition {
+    0% { transform: translate(50%, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+body {
+    animation: page-transition 0.5s ease-in;
+}
+
+#content {
+    padding: 120px 0 0 100px;
+}
+
+#content #callout h1 {
+    color: #FFFFFF;
+    font-family: "Gotham", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#content #callout h1 em {
+    color: rgba(0, 0, 0, 0.41);
+    font-style: normal;
+}
+
+#content #callout h2 {
+    color: rgba(0, 0, 0, 0.41);
+    font-family: "Gotham", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+}
+
+.page {
+    align-items: center;
+    background: #FFD2C4;
+    /* display: flex; */
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0 0;
+    padding: 0 300px 0 0;
+    /* max-width: calc(300px + 300px + 300px + 35px + 35px + 35px); */
+}
+
+#portfolio .item {
+    background: rgba(0, 0, 0, 0.41);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 300px;
+    margin: 0 35px 35px 0;
+    width: 300px;
+}
+
+#portfolio .item img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#art {
+    background: #C9C4FF;
+}
+
+#music {
+    background: #F4B0B0;
+}
+
+#projects {
+    background: #BADAFD;
+}
+
+#art #art-button {
+    color: rgba(0, 0, 0, 0.41);
+}
+
+#music #music-button {
+    color: rgba(0, 0, 0, 0.41);
+}
+
+#projects #projects-button {
+    color: rgba(0, 0, 0, 0.41);
+}
+
+#about #about-button {
+    color: rgba(0, 0, 0, 0.41);
+}

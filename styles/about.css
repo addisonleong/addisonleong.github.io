@@ -1,0 +1,46 @@
+#about {
+    background: #959595;
+}
+
+#about-content {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    padding: 0 300px 0 100px;
+}
+
+#info {
+    max-width: 850px;
+}
+
+#info h1 {
+    color: #FFFFFF;
+    font-family: "Gotham", sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#info p {
+    color: #FFFFFF;
+    font-family: "Gotham", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 55px;
+    margin: 0;
+}
+
+#info p a, #info p em {
+    color: rgba(0, 0, 0, 0.41);
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.line {
+    background: #FFFFFF;
+    height: 1px;
+    margin: 20px 0;
+    width: 90%;
+}

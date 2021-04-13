@@ -1,0 +1,61 @@
+[
+    {
+        "title": "ADDISON LEONG - ART",
+        "message": "I make <em>digital art</em> sometimes",
+        "tools": "Sketch | Illustrator | Cinema 4D | Photoshop",
+        "page": "art",
+        "portfolio": {
+            "template": "<div class=\"item\"><img src=\"{{IMAGE}}\" /></div>",
+            "items": [
+                {
+                    "image": "./assets/images/art/invention1.jpg"
+                },
+                {
+                    "image": "./assets/images/art/infinity1.jpg"
+                },
+                {
+                    "image": "./assets/images/art/bird1.jpg"
+                },
+                {
+                    "image": "./assets/images/art/greebles.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "title": "ADDISON LEONG - MUSIC",
+        "message": "I write and produce <em>music</em> often",
+        "tools": "Ableton | Logic Pro X | Piano | Guitar | Trombone",
+        "page": "music",
+        "portfolio": {
+            "template": "<div class=\"item\" style=\"background-image: url();\"></div>",
+            "items": []
+        }
+    },
+    {
+        "title": "ADDISON LEONG - PROJECTS",
+        "message": "I build a lot of <em>things</em> as an engineer",
+        "tools": "Software Engineer | UI/UX | Product",
+        "page": "projects",
+        "portfolio": {
+            "template": "<div class=\"item\" style=\"background-image: url({{IMAGE}});\"></div>",
+            "items": [
+                {
+                    "image": "./assets/images/projects/whonew.png"
+                },
+                {
+                    "image": "./assets/images/projects/emojify.png"
+                },
+                {
+                    "image": "./assets/images/projects/plop.png"
+                },
+                {
+                    "image": "./assets/images/projects/goldfish.jpg"
+                },
+                {
+                    "image": "./assets/images/projects/wormhole.jpg"
+                }
+            ]
+        }
+    }
+]
