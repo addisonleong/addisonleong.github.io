@@ -25,11 +25,28 @@
     {
         "title": "ADDISON LEONG - MUSIC",
         "message": "I write and produce <em>music</em> often",
-        "tools": "Ableton | Logic Pro X | Piano | Guitar | Trombone",
+        "tools": "Ableton | Logic Pro X | Piano | Guitar | Trombone | Kazoo",
         "page": "music",
         "portfolio": {
-            "template": "<div class=\"item\" style=\"background-image: url();\"></div>",
-            "items": []
+            "template": "<a href=\"{{LINK}}\" target=\"blank\"><div class=\"item\" style=\"background-image: url({{IMAGE}});\"></div></a>",
+            "items": [
+                {
+                    "image": "./assets/images/music/othernatures.jpeg",
+                    "link": "https://soundcloud.com/aplphonic/other-natures-feat-kqt"
+                },
+                {
+                    "image": "./assets/images/music/othernatures.jpeg",
+                    "link": "https://soundcloud.com/aplphonic/fade-feat-kqt"
+                },
+                {
+                    "image": "./assets/images/music/withoutyouremix.jpeg",
+                    "link": "https://soundcloud.com/aplphonic/without-you-aplphonic-remix"
+                },
+                {
+                    "image": "./assets/images/music/up.jpeg",
+                    "link": "https://soundcloud.com/aplphonic/up-original-mix"
+                }
+            ]
         }
     },
     {
