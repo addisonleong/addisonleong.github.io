@@ -31,7 +31,7 @@
 #waterfall-ios {
     animation: floating 3s ease-in-out infinite;
     display: none;
-    height: 400px;
+    width: 400px;
 }
 
 #waterfall-shadow {

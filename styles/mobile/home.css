@@ -3,6 +3,11 @@
         width: 650px;
     }
 
+    #waterfall-ios {
+        display: none;
+        width: 650px;
+    }
+
     #waterfall-shadow {
         height: 20px;
         left: calc(50% - 24px);
