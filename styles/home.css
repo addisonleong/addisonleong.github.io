@@ -28,6 +28,12 @@
     width: 400px;
 }
 
+#waterfall-ios {
+    animation: floating 3s ease-in-out infinite;
+    display: none;
+    height: 400px;
+}
+
 #waterfall-shadow {
     animation: shadow 3s ease-in-out infinite;
     background: rgba(0, 0, 0, 0.25);

@@ -12,8 +12,9 @@
         <div id="waterfall-container">
             <video id="waterfall" autoplay loop muted>
                 <source src="assets/waterfall.webm" type="video/webm">
-                <source src="assets/waterfall.mov" type="video/mp4">
+                <!-- <source src="assets/waterfall.mov" type="video/mp4"> -->
             </video>
+            <img id="waterfall-ios" src="assets/waterfall.png" />
             <div id="waterfall-shadow"></div>
         </div>
         <div id="menu">
@@ -23,5 +24,24 @@
             <a href="about" id="about-button">about.</a>
             <a href="https://blog.addisonleong.com" id="blog-button">blog.</a>
         </div>
+        <script>
+            function iOS() {
+                return [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ].includes(navigator.platform)
+                // iPad on iOS 13 detection
+                || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+            }
+            
+            if (iOS()) {
+                document.getElementById("waterfall").style.display = "none";
+                document.getElementById("waterfall-ios").style.display = "block";
+            }
+        </script>
     </body>
 </html>
