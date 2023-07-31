@@ -31,6 +31,10 @@
             "template": "<a href=\"{{LINK}}\" target=\"blank\"><div class=\"item\" style=\"background-image: url({{IMAGE}});\"></div></a>",
             "items": [
                 {
+                    "image": "./assets/images/music/trains.jpg",
+                    "link": "https://open.spotify.com/track/22gSu9WnTuxzLxy8sBUPer?si=35dffc4c1dfb4950"
+                },
+                {
                     "image": "./assets/images/music/songsforsadkids.jpg",
                     "link": "https://open.spotify.com/album/5xLsh4vtYgGYXBYsqW1jl5?si=x6uPWvM6TsOfBd8tlyAWKA"
                 },
