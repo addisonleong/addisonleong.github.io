@@ -19,7 +19,7 @@
                 <a href="music" id="music-button">music</a>
                 <a href="projects" id="projects-button">projects</a>
                 <a href="about" id="about-button">about</a>
-                <a href="https://blog.addisonleong.com" id="blog-button">blog</a>
+                <!-- <a href="https://blog.addisonleong.com" id="blog-button">blog</a> -->
             </div>
         </div>
         <div id="menu">
@@ -27,7 +27,7 @@
             <a href="music" id="music-button">music.</a>
             <a href="projects" id="projects-button">projects.</a>
             <a href="about" id="about-button">about.</a>
-            <a href="https://blog.addisonleong.com" id="blog-button">blog.</a>
+            <!-- <a href="https://blog.addisonleong.com" id="blog-button">blog.</a> -->
         </div>
         <div id="content">
             <div id="callout">
@@ -35,12 +35,30 @@
                 <h2>Software Engineer | UI/UX | Product</h2>
             </div>
             <div id="portfolio">
-                <div class="item" style="background-image: url(./assets/images/projects/whonew.png);"></div>
-<div class="item" style="background-image: url(./assets/images/projects/emojify.png);"></div>
-<div class="item" style="background-image: url(./assets/images/projects/plop.png);"></div>
-<div class="item" style="background-image: url(./assets/images/projects/goldfish.jpg);"></div>
-<div class="item" style="background-image: url(./assets/images/projects/wormhole.jpg);"></div>
+                <div class="item" style="background-image: url(./assets/images/projects/whonew.png);" onclick="openModal('whonew')"></div>
+<div class="item" style="background-image: url(./assets/images/projects/emojify.png);" onclick="openModal('emojify')"></div>
+<div class="item" style="background-image: url(./assets/images/projects/plop.png);" onclick="openModal('plop')"></div>
+<div class="item" style="background-image: url(./assets/images/projects/goldfish.jpg);" onclick="openModal('goldfish')"></div>
+<div class="item" style="background-image: url(./assets/images/projects/wormhole.jpg);" onclick="openModal('wormhole')"></div>
             </div>
         </div>
+        <div id="modal">
+            <div class="modal-item" id="whonew"><h1>Whonew</h1><h2>A geolocation-based dating app built for serendipitous encounters.</h2></div>
+<div class="modal-item" id="emojify"><h1>Emojify</h1><h2>A handy extension to give you the ability to use emoji codes in Facebook's messenger.com, just like you'd do in Slack.</h2><img src="./assets/images/projects/previews/emojify.png" /></div>
+<div class="modal-item" id="plop"><h1>Plop</h1><h2>Native macOS app providing drag-and-drop window management support. Built in Swift.</h2><video autoplay muted src="./assets/images/projects/previews/plop.mov" /></div>
+<div class="modal-item" id="goldfish"><h1>Goldfish Diary</h1><h2>A personal online diary that emails you once a day to encourage daily mindfulness, and composites all entries into a timeline.</h2></div>
+<div class="modal-item" id="wormhole"><h1>Wormhole Transfer</h1><h2>Simple file transfer website that deletes files once they are downloaded.</h2></div>
+            <div id="modal-background" onclick="closeModal()"></div>
+        </div>
+        <script>
+            function openModal(id) {
+                document.querySelector("#modal").style.display = "flex";
+                Array.from(document.querySelectorAll(".modal-item")).map(x => x.style.display = "none");
+                document.querySelector(`#${id}`).style.display = "flex";
+            }
+            function closeModal() {
+                document.querySelector("#modal").style.display = "none";
+            }
+        </script>
     </body>
 </html>

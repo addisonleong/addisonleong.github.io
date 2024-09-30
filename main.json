@@ -67,22 +67,47 @@
         "tools": "Software Engineer | UI/UX | Product",
         "page": "projects",
         "portfolio": {
-            "template": "<div class=\"item\" style=\"background-image: url({{IMAGE}});\"></div>",
+            "template": "<div class=\"item\" style=\"background-image: url({{IMAGE}});\" onclick=\"openModal('{{SLUG}}')\"></div>",
             "items": [
                 {
-                    "image": "./assets/images/projects/whonew.png"
+                    "image": "./assets/images/projects/whonew.png",
+                    "slug": "whonew"
                 },
                 {
-                    "image": "./assets/images/projects/emojify.png"
+                    "image": "./assets/images/projects/emojify.png",
+                    "slug": "emojify"
                 },
                 {
-                    "image": "./assets/images/projects/plop.png"
+                    "image": "./assets/images/projects/plop.png",
+                    "slug": "plop"
                 },
                 {
-                    "image": "./assets/images/projects/goldfish.jpg"
+                    "image": "./assets/images/projects/goldfish.jpg",
+                    "slug": "goldfish"
                 },
                 {
-                    "image": "./assets/images/projects/wormhole.jpg"
+                    "image": "./assets/images/projects/wormhole.jpg",
+                    "slug": "wormhole"
+                }
+            ]
+        },
+        "modals": {
+            "template": "{{CONTENT}}",
+            "items": [
+                {
+                    "content": "<div class=\"modal-item\" id=\"whonew\"><h1>Whonew</h1><h2>A geolocation-based dating app built for serendipitous encounters.</h2></div>"
+                },
+                {
+                    "content": "<div class=\"modal-item\" id=\"emojify\"><h1>Emojify</h1><h2>A handy extension to give you the ability to use emoji codes in Facebook's messenger.com, just like you'd do in Slack.</h2><img src=\"./assets/images/projects/previews/emojify.png\" /></div>"
+                },
+                {
+                    "content": "<div class=\"modal-item\" id=\"plop\"><h1>Plop</h1><h2>Native macOS app providing drag-and-drop window management support. Built in Swift.</h2><video autoplay muted src=\"./assets/images/projects/previews/plop.mov\" /></div>"
+                },
+                {
+                    "content": "<div class=\"modal-item\" id=\"goldfish\"><h1>Goldfish Diary</h1><h2>A personal online diary that emails you once a day to encourage daily mindfulness, and composites all entries into a timeline.</h2></div>"
+                },
+                {
+                    "content": "<div class=\"modal-item\" id=\"wormhole\"><h1>Wormhole Transfer</h1><h2>Simple file transfer website that deletes files once they are downloaded.</h2></div>"
                 }
             ]
         }

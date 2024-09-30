@@ -19,7 +19,7 @@
                 <a href="music" id="music-button">music</a>
                 <a href="projects" id="projects-button">projects</a>
                 <a href="about" id="about-button">about</a>
-                <a href="https://blog.addisonleong.com" id="blog-button">blog</a>
+                <!-- <a href="https://blog.addisonleong.com" id="blog-button">blog</a> -->
             </div>
         </div>
         <div id="menu">
@@ -27,7 +27,7 @@
             <a href="music" id="music-button">music.</a>
             <a href="projects" id="projects-button">projects.</a>
             <a href="about" id="about-button">about.</a>
-            <a href="https://blog.addisonleong.com" id="blog-button">blog.</a>
+            <!-- <a href="https://blog.addisonleong.com" id="blog-button">blog.</a> -->
         </div>
         <div id="content">
             <div id="callout">
@@ -38,5 +38,19 @@
                 {{PORTFOLIO}}
             </div>
         </div>
+        <div id="modal">
+            {{MODALS}}
+            <div id="modal-background" onclick="closeModal()"></div>
+        </div>
+        <script>
+            function openModal(id) {
+                document.querySelector("#modal").style.display = "flex";
+                Array.from(document.querySelectorAll(".modal-item")).map(x => x.style.display = "none");
+                document.querySelector(`#${id}`).style.display = "flex";
+            }
+            function closeModal() {
+                document.querySelector("#modal").style.display = "none";
+            }
+        </script>
     </body>
 </html>

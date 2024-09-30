@@ -54,6 +54,7 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+    cursor: pointer;
     height: 300px;
     margin: 0 35px 35px 0;
     width: 300px;
