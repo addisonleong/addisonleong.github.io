@@ -70,6 +70,10 @@
             "template": "<div class=\"item\" style=\"background-image: url({{IMAGE}});\" onclick=\"openModal('{{SLUG}}')\"></div>",
             "items": [
                 {
+                    "image": "./assets/images/projects/bonsai.jpg",
+                    "slug": "bonsai"
+                },
+                {
                     "image": "./assets/images/projects/whonew.png",
                     "slug": "whonew"
                 },
@@ -94,6 +98,9 @@
         "modals": {
             "template": "{{CONTENT}}",
             "items": [
+                {
+                    "content": "<div class=\"modal-item\" id=\"bonsai\"><h1>Bonsai</h1><h2>An in-progress mobile meditation app emphasizing nurturing your inner child.</h2><img src=\"./assets/images/projects/previews/bonsai.jpg\" /></div>"
+                },
                 {
                     "content": "<div class=\"modal-item\" id=\"whonew\"><h1>Whonew</h1><h2>A geolocation-based dating app built for serendipitous encounters.</h2></div>"
                 },
